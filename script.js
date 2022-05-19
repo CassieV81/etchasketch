@@ -7,12 +7,10 @@ function createGrid(rows, cols) {
         let grid = document.createElement('div');
         gridBox.appendChild(grid).className = 'grids';
         // grid.innerText = i + 1;
-        let cells = document.querySelectorAll('.grids');
-        cells.forEach((grids) => {
-         grids.addEventListener('mouseover', () => {
-        grids.style.backgroundColor = 'black';
+        
+         grid.addEventListener('mouseover', () => {
+        grid.style.backgroundColor = 'black';
     })
-})
     }
 }
 
