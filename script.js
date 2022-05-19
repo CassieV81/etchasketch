@@ -8,4 +8,12 @@ function createGrid(rows, cols) {
         gridBox.appendChild(grid).className = 'grids';
     }
 }
-createGrid(12,12)
+createGrid(5,5)
+
+const cells = document.querySelectorAll('.grids');
+cells.forEach((grids) => {
+    grids.addEventListener('mouseover', () => {
+        grids.style.backgroundColor = 'black';
+    })
+})
+console.log(cells);
