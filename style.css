@@ -7,6 +7,9 @@
 }
 .container {
     display: grid;
+    grid-template-columns: repeat(var(--grid-size), minmax(0, 1fr));
+    grid-template-rows: repeat(var(--grid-size), minmax(1fr, 0));
+    gap: 0;
     border: 2px solid black;
     height: 400px;
     width: 400px;
@@ -24,6 +27,11 @@
     left: 50%;
     transform: translate(-50%, -50%);
 }
-.cell {
-    border: 2px solid red;
+.buttons {
+    height: 20px;
+    width: 50px;
+    margin-top: 10px;
+}
+.grids {
+    border: 1px solid rgb(39, 39, 39);
 }
